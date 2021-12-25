@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewMic"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:src="@drawable/michrophone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/linearLayout1"
+        android:layout_below="@+id/imageViewMic"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        >
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:id="@+id/frequency"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linearLayout1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startplay"
+                    android:src="@drawable/play">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startrec"
+                    android:src="@drawable/record">
+
+                </ImageView>
+
+
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
